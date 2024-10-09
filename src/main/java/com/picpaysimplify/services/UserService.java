@@ -26,7 +26,7 @@ public class UserService {
         return userRepository.findById(id).orElseThrow(() -> new Exception("Usuário não encontrado"));
     }
 
-    public User createUser(User user) {
+    public User saveUser(User user) {
         return userRepository.save(user);
     }
 }
